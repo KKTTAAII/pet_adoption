@@ -13,10 +13,13 @@
     </div>
 </section>
 <hr>
-<section>
+<div class="container text-center">
+    <button id="editBtn" class="btn btn-success mt-3">Edit Info</button>
+</div>
+<section class="edit_form">
     <div class="container text-center">
         <h4>Edit {{pet.name}} Info</h4>
-        {%include 'addform.html' ignore missing with context%}
+        {%include 'form.html' ignore missing with context%}
     </div>
 </section>
 {% endblock %}

@@ -11,21 +11,18 @@
       integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
       crossorigin="anonymous"
     />
-    <link
-      href="/static/app.css"
-      rel="stylesheet"
-    />
+    <link href="/static/app.css" rel="stylesheet" />
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
     <div>
       <nav class="navbar-expand-lg navbar navbar-dark bg-dark">
-        <a href="/" class="navbar-brand" >HOME</a>
+        <a href="/" class="navbar-brand">HOME</a>
         <a href="/add" class="navbar-brand">ADD PET</a>
       </nav>
     </div>
-    <div class="container mt-3">
-    {% block content%} {% endblock %}
-    </div>
+    <div class="container mt-3">{% block content%} {% endblock %}</div>
+
+    <script src="/static/app.js"></script>
   </body>
 </html>

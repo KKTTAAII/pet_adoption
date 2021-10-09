@@ -52,7 +52,7 @@ def show_pet_details(pet_id):
         pet.notes = form.notes.data
         db.session.commit()
 
-        flash(f"{pet.name}'s info has been edited!")
+        flash(f"{pet.name}'s info has been updated!")
         return redirect("/")
     else:
         return render_template("details.html", form=form, pet=pet)   
