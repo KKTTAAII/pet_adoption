@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{%block title%}{{pet.id}}{%endblock%} 
+{% block content%}
+<div class="container text-center">
+    <h1>{{pet.name}}</h1>
+</div>
+<section class="infosection">
+    <div class="container text-center">
+        <img src="{{pet.photo_url}}" alt="{{pet.name}}" height="200px" width="200px" class="img-thumbnail mt-3">
+        <p><span class="species">Species:</span> {{pet.species}}</p>
+        <p><span class="species">Age:</span> {{pet.age}}</p>
+        <p><span class="species">About:</span> {{pet.notes}}</p>
+    </div>
+</section>
+<hr>
+<section>
+    <div class="container text-center">
+        <h4>Edit {{pet.name}} Info</h4>
+        {%include 'addform.html' ignore missing with context%}
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,20 @@
+.color {
+    background-color: #99B77D;
+}
+
+.petname, .species {
+    font-weight: bold;
+}
+
+.avail {
+    font-weight: bold;
+    color: #99B77D;
+}
+
+.card {
+    width: 16rem;
+}
+
+ul {
+    list-style-type: none;
+}
