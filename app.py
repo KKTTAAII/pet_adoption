@@ -33,7 +33,7 @@ def add_pet_form():
         flash(f"{pet.name} has been added to the community!")
         return redirect("/")
     else:
-        return render_template("form.html", form=form)
+        return render_template("addform.html", form=form)
 
 @app.route("/<int:pet_id>", methods=["GET", "POST"])
 def show_pet_details(pet_id):
